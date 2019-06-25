@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/clem16/Sonarr-MakeLinks.svg?branch=master)](https://travis-ci.org/clem16/Sonarr-MakeLinks)
+
 Sonarr-MakeLinks
 
 Sonarr::MakeLinks is used to automate the creation of hard linked directories using data from Sonarr for use in Plex Media Player.

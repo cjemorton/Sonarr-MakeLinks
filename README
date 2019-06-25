@@ -50,6 +50,8 @@ EXAMPLE:
 use Sonarr::MakeLinks
 Sonarr::MakeLinks::run_api_call("SONARR_API_KEY", "127.0.0.1", "8989", "/tv/plex-links");
 
+ONE LINER EXAMPLE:
+perl -MSonarr::MakeLinks -e "Sonarr::MakeLinks::run_api_call('API_KEY', '127.0.0.1', '8989', '/tv/plex-links');"
 
 INSTALLATION
 

@@ -1,7 +1,7 @@
 # This Makefile is for the Sonarr::MakeLinks extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 7.44 (Revision: 74400) from the contents of
+# 7.62 (Revision: 76200) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -29,27 +29,27 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /usr/local/lib/perl5/5.32/mach/Config.pm).
+# These definitions are from config.sh (via /usr/local/lib/perl5/5.36/mach/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
 CCCDLFLAGS = -DPIC -fPIC
-CCDLFLAGS =   -Wl,-R/usr/local/lib/perl5/5.32/mach/CORE
+CCDLFLAGS =   -Wl,-R/usr/local/lib/perl5/5.36/mach/CORE
 DLEXT = so
 DLSRC = dl_dlopen.xs
 EXE_EXT = 
 FULL_AR = /usr/bin/ar
 LD = cc
-LDDLFLAGS = -shared  -L/usr/local/lib/perl5/5.32/mach/CORE -lperl -L/usr/local/lib -fstack-protector-strong
+LDDLFLAGS = -shared  -L/usr/local/lib/perl5/5.36/mach/CORE -lperl -L/usr/local/lib -fstack-protector-strong
 LDFLAGS = -pthread -Wl,-E  -fstack-protector-strong -L/usr/local/lib
 LIBC = 
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = freebsd
-OSVERS = 12.1-synth
+OSVERS = 14.0-release-p9
 RANLIB = :
 SITELIBEXP = /usr/local/lib/perl5/site_perl
-SITEARCHEXP = /usr/local/lib/perl5/site_perl/mach/5.32
+SITEARCHEXP = /usr/local/lib/perl5/site_perl/mach/5.36
 SO = so
 VENDORARCHEXP = 
 VENDORLIBEXP = 
@@ -80,19 +80,19 @@ MAN1SECTION = 1
 MAN3SECTION = 3
 INSTALLDIRS = site
 DESTDIR = 
-PREFIX = /usr/local
+PREFIX = $(SITEPREFIX)
 PERLPREFIX = /usr/local
 SITEPREFIX = /usr/local
 VENDORPREFIX = 
-INSTALLPRIVLIB = /usr/local/lib/perl5/5.32
+INSTALLPRIVLIB = /usr/local/lib/perl5/5.36
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
 INSTALLSITELIB = /usr/local/lib/perl5/site_perl
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
 INSTALLVENDORLIB = 
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /usr/local/lib/perl5/5.32/mach
+INSTALLARCHLIB = /usr/local/lib/perl5/5.36/mach
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /usr/local/lib/perl5/site_perl/mach/5.32
+INSTALLSITEARCH = /usr/local/lib/perl5/site_perl/mach/5.36
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
 INSTALLVENDORARCH = 
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
@@ -108,28 +108,28 @@ INSTALLSITESCRIPT = /usr/local/bin
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
 INSTALLVENDORSCRIPT = 
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
-INSTALLMAN1DIR = /usr/local/lib/perl5/5.32/perl/man/man1
+INSTALLMAN1DIR = /usr/local/lib/perl5/5.36/perl/man/man1
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
 INSTALLSITEMAN1DIR = /usr/local/lib/perl5/site_perl/man/man1
 DESTINSTALLSITEMAN1DIR = $(DESTDIR)$(INSTALLSITEMAN1DIR)
 INSTALLVENDORMAN1DIR = 
 DESTINSTALLVENDORMAN1DIR = $(DESTDIR)$(INSTALLVENDORMAN1DIR)
-INSTALLMAN3DIR = /usr/local/lib/perl5/5.32/perl/man/man3
+INSTALLMAN3DIR = /usr/local/lib/perl5/5.36/perl/man/man3
 DESTINSTALLMAN3DIR = $(DESTDIR)$(INSTALLMAN3DIR)
 INSTALLSITEMAN3DIR = /usr/local/lib/perl5/site_perl/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = 
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = /usr/local/lib/perl5/5.32
-PERL_ARCHLIB = /usr/local/lib/perl5/5.32/mach
-PERL_ARCHLIBDEP = /usr/local/lib/perl5/5.32/mach
+PERL_LIB = /usr/local/lib/perl5/5.36
+PERL_ARCHLIB = /usr/local/lib/perl5/5.36/mach
+PERL_ARCHLIBDEP = /usr/local/lib/perl5/5.36/mach
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /usr/local/lib/perl5/5.32/mach/CORE
-PERL_INCDEP = /usr/local/lib/perl5/5.32/mach/CORE
+PERL_INC = /usr/local/lib/perl5/5.36/mach/CORE
+PERL_INCDEP = /usr/local/lib/perl5/5.36/mach/CORE
 PERL = "/usr/local/bin/perl"
 FULLPERL = "/usr/local/bin/perl"
 ABSPERL = $(PERL)
@@ -144,9 +144,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /usr/local/lib/perl5/5.32/ExtUtils/MakeMaker.pm
-MM_VERSION  = 7.44
-MM_REVISION = 74400
+MAKEMAKER   = /usr/local/lib/perl5/site_perl/ExtUtils/MakeMaker.pm
+MM_VERSION  = 7.62
+MM_REVISION = 76200
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -196,7 +196,7 @@ TO_INST_PM = lib/Sonarr/MakeLinks.pm
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 7.44
+MM_Unix_VERSION = 7.62
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -313,8 +313,6 @@ all :: pure_all manifypods
 	$(NOECHO) $(NOOP)
 
 pure_all :: config pm_to_blib subdirs linkext
-	$(NOECHO) $(NOOP)
-
 	$(NOECHO) $(NOOP)
 
 subdirs :: $(MYEXTLIB)
@@ -497,7 +495,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
-	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.44, CPAN::Meta::Converter version 2.150010'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: artistic_2' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
@@ -519,7 +517,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "Clem Morton <clem@cpan.org>"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
 	$(NOECHO) $(ECHO) '   "dynamic_config" : 1,' >> META_new.json
-	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.44, CPAN::Meta::Converter version 2.150010",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "license" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "artistic_2"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -558,7 +556,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "version" : "0.01",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 4.04"' >> META_new.json
+	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 4.05"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -816,7 +814,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
 FULLPERL      = "/usr/local/bin/perl"
-MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/usr/local/lib/perl5/5.32/mach" "-I/usr/local/lib/perl5/5.32"
+MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/usr/local/lib/perl5/5.36/mach" "-I/usr/local/lib/perl5/5.36"
 
 $(MAP_TARGET) :: $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -872,7 +870,7 @@ ppd :
 	$(NOECHO) $(ECHO) '    <AUTHOR>Clem Morton &lt;clem@cpan.org&gt;</AUTHOR>' >> Sonarr-MakeLinks.ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> Sonarr-MakeLinks.ppd
 	$(NOECHO) $(ECHO) '        <PERLCORE VERSION="5,006,0,0" />' >> Sonarr-MakeLinks.ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="amd64-freebsd-thread-multi-5.32" />' >> Sonarr-MakeLinks.ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="amd64-freebsd-thread-multi-5.36" />' >> Sonarr-MakeLinks.ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> Sonarr-MakeLinks.ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> Sonarr-MakeLinks.ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> Sonarr-MakeLinks.ppd

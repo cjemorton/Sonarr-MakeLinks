@@ -96,7 +96,7 @@ my $dir_incomplete = "$plex_ln_dir/incomplete";
 my $ua = LWP::UserAgent->new;
 my $json = JSON::PP->new;
 
-my $server_endpoint = "http://$s_ip:$s_port/api/series?apikey=$s_apikey";
+my $server_endpoint = "http://$s_ip:$s_port/api/v3/series?apikey=$s_apikey";
 #DEBUG: Print server endpoint.
 #print "$server_endpoint\n";
 

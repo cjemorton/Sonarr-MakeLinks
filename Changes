@@ -2,3 +2,5 @@ Revision history for Sonarr-MakeLinks
 
 0.01    06/25/19/2:08AM
         Initial Release. Basic Functinality - Single Filesystem. Three Categories.
+0.02	12/19/24/8:20PM
+	Modified the sonarr api url to include /v3/
